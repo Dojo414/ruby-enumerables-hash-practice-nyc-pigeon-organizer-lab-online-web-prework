@@ -4,7 +4,7 @@ def nyc_pigeon_organizer(data)
   data.each do |first_point, bird_color|
     bird_color.each do |color, name|
       name.each do |bird_name|
-        sorted_pigeons[bird_name] = {:color => [], :gender => [], :lives[]}
+        sorted_pigeons[bird_name] = {:color => [], :gender => [], :lives => []}
       end
     end
   end
