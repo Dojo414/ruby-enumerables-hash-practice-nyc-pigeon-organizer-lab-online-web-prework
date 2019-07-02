@@ -21,5 +21,4 @@ def nyc_pigeon_organizer(data)
     end
   end
   sorted_pigeons
-  
 end
