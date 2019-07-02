@@ -1,3 +1,6 @@
 def nyc_pigeon_organizer(data)
-  # write your code here!
+  sorted_pigeons = {}
+  
+  data.each do |first_point, bird_color|
+    bird_color.each do |
 end
