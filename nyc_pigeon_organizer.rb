@@ -3,6 +3,7 @@
 def nyc_pigeon_organizer (data)
 organized_pigeons = {}
 
+# Establish the new has for the data
 
 data.each do |first_point, next_level|
   next_level.each do |color, bird_name|
@@ -12,6 +13,19 @@ data.each do |first_point, next_level|
   end
 end
 
+birdies = organized_pigeons.keys
+
+# Place the colors into the new hash
+
+data[:color].each do |upper_level, color|
+  color.each do |colors, name|
+    birdies.each do |object|
+      if birdies[object] === colors[name]
+        birdies[object][:color] = color[colors].to_s
+      end
+    end
+  end
+end
 
 
 return organized_pigeons
