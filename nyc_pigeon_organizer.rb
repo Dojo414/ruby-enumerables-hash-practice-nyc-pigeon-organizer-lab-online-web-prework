@@ -26,8 +26,6 @@ data[:color].each do |upper_level, color|
     end
   end
 end
-return organized_pigeons
-end 
 
 #Repeat for gender
 
