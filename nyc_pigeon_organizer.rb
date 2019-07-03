@@ -20,7 +20,7 @@ birdies = organized_pigeons.keys
 data[:color].each do |upper_level, color|
   color.each do |colors, name|
     birdies.each do |object|
-      if birdies[object] === colors[name]
+      if object === name
         birdies[object][:color] << upper_level.to_s
       end
     end
