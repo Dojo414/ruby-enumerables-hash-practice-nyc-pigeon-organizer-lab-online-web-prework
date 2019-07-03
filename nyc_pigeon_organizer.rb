@@ -38,5 +38,19 @@ data[:gender].each do |upper_level, gender|
     end
   end
 end
+
+
+#Repeat for lives
+
+data[:lives].each do |upper_level, lives|
+  lives.each do |name|
+    birdies.each do |object|
+      if object === name
+        organized_pigeons[object][:lives] << upper_level.to_s
+      end
+    end
+  end
+end
+
 return organized_pigeons
 end 
