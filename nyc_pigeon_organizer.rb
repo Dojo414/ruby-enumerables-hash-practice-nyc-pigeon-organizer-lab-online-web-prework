@@ -21,11 +21,12 @@ data[:color].each do |upper_level, color|
   color.each do |colors, name|
     birdies.each do |object|
       if object === name
-        birdies[object][:color] << upper_level.to_s
+        organized_pigeons[object][:color] << upper_level.to_s
       end
     end
   end
 end
-
 return organized_pigeons
 end 
+
+
