@@ -29,4 +29,16 @@ end
 return organized_pigeons
 end 
 
+#Repeat for gender
 
+data[:gender].each do |upper_level, gender|
+  gender.each do |name|
+    birdies.each do |object|
+      if object === name
+        organized_pigeons[object][:gender] << upper_level.to_s
+      end
+    end
+  end
+end
+return organized_pigeons
+end 
